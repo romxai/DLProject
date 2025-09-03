@@ -1,0 +1,9 @@
+playwright
+beautifulsoup4
+transformers
+torch
+requests
+pandas
+python-dotenv
+vaderSentiment
+flair

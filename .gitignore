@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Environment
+.env
+*.env
+venv/
+ENV/
+.envrc
+
+# Playwright
+playwright-report/
+
+# Logs
+*.log
+news_scraper_debug.log
+twitter_scraper_debug.log
+debug.log
+
+# Output and data
+output/
+*.csv
+*.tsv
+*.xlsx
+*.db
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.bak
+*.swp
+*.tmp
+
+# Node
+node_modules/
+
+# Coverage
+.coverage
+htmlcov/
+.coverage.*
+
+# Test
+*.pytest_cache/
+
+# Git
+.git/
