@@ -55,11 +55,11 @@ async def main():
     
     # Twitter configuration
     TWITTER_QUERIES = {
-        "TSLA": ["$TSLA", "Tesla stock", "Elon Musk Tesla"],
-        "AAPL": ["$AAPL", "Apple stock", "Tim Cook Apple"],
-        "MSFT": ["$MSFT", "Microsoft stock", "Satya Nadella Microsoft"],
-        "GOOGL": ["$GOOGL", "Google stock", "Alphabet stock"],
-        "AMZN": ["$AMZN", "Amazon stock", "Andy Jassy Amazon"]
+        "TSLA": ["$TSLA", "Tesla", "Elon Musk Tesla"],
+        "AAPL": ["$AAPL", "Apple", "Tim Cook Apple"],
+        "MSFT": ["$MSFT", "Microsoft", "Satya Nadella Microsoft"],
+        "GOOGL": ["$GOOGL", "Google", "Alphabet"],
+        "AMZN": ["$AMZN", "Amazon", "Andy Jassy Amazon"]
     }
     
     # Chrome user profile settings
@@ -82,7 +82,7 @@ async def main():
     
     # Only do Twitter scraping
     TWITTER_QUERIES = {
-        "TSLA": ["$TSLA", "Tesla stock", "Elon Musk Tesla"],
+        "TSLA": ["$TSLA", "Tesla", "Elon Musk Tesla"],
     }
     NUM_TWEETS = 30
     USER_DATA_DIR = os.path.join(os.path.expanduser("~"), "chrome-data", "twitter-profile")
@@ -113,7 +113,7 @@ async def main():
         # Remove tweets with excessive hashtags, links, or promotional phrases
         if text.count('#') > 4 or text.count('http') > 1:
             return True
-        if any(kw in text.lower() for kw in ['earn $', 'follow him now', 'finance professor', 'stock picks are gold']):
+        if any(kw in text.lower() for kw in ['earn $', 'follow him now', 'finance professor', 'stock picks are gold', 'buy now', 'free trial']):
             return True
         if len(text) < 20 or len(text) > 300:
             return True
