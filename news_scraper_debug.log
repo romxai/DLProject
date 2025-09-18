@@ -1,0 +1,853 @@
+2025-09-04 01:12:48,454 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 01:12:48,454 - DEBUG - Using proactor: IocpProactor
+2025-09-04 01:12:48,454 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 01:12:48,470 - DEBUG - News sources for TSLA: ['https://www.cnbc.com/quotes/TSLA', 'https://finance.yahoo.com/quote/TSLA']
+2025-09-04 01:12:48,470 - DEBUG - Adding news scraping task for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:12:48,470 - DEBUG - Adding news scraping task for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:12:48,470 - INFO - Starting news scraping for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:12:48,470 - DEBUG - Detected source type: cnbc
+2025-09-04 01:12:48,470 - INFO - Starting news scraping for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:12:48,470 - DEBUG - Detected source type: yahoo_finance
+2025-09-04 01:12:49,074 - INFO - Navigating to https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:12:49,079 - INFO - Navigating to https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:12:50,097 - INFO - Page loaded successfully. Extracting content...
+2025-09-04 01:12:53,064 - INFO - Page loaded successfully. Extracting content...
+2025-09-04 01:13:23,085 - ERROR - Unexpected error during scraping: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-09-04 01:13:23,270 - INFO - Browser closed.
+2025-09-04 01:13:29,867 - ERROR - Error scraping CNBC articles: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(".LatestNews-list") to be visible
+    24 × locator resolved to 3 elements. Proceeding with the first one: <ul class="LatestNews-list">…</ul>
+
+2025-09-04 01:13:29,868 - INFO - Scraped 0 articles from https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:13:30,044 - INFO - Browser closed.
+2025-09-04 01:13:30,055 - INFO - Completed news scraping. Total sources: 2
+2025-09-04 01:13:30,059 - INFO - Total news articles scraped: 0
+2025-09-04 01:13:30,059 - DEBUG - Twitter queries for TSLA: ['$TSLA', 'Tesla stock', 'Elon Musk Tesla']
+2025-09-04 01:13:30,059 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 01:13:30,060 - DEBUG - Adding Twitter scraping task for query: Tesla stock
+2025-09-04 01:13:30,060 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 01:19:14,746 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 01:19:14,746 - DEBUG - Using proactor: IocpProactor
+2025-09-04 01:19:14,746 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 01:19:14,746 - DEBUG - News sources for TSLA: ['https://www.cnbc.com/quotes/TSLA', 'https://finance.yahoo.com/quote/TSLA']
+2025-09-04 01:19:14,746 - DEBUG - Adding news scraping task for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:19:14,746 - DEBUG - Adding news scraping task for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:19:14,746 - INFO - Starting news scraping for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:19:14,746 - DEBUG - Detected source type: cnbc
+2025-09-04 01:19:14,746 - INFO - Starting news scraping for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:19:14,746 - DEBUG - Detected source type: yahoo_finance
+2025-09-04 01:19:15,345 - INFO - Navigating to https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:19:15,347 - INFO - Navigating to https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:19:17,549 - INFO - Page loaded successfully. Extracting content...
+2025-09-04 01:19:20,171 - INFO - Page loaded successfully. Extracting content...
+2025-09-04 01:19:47,559 - ERROR - Unexpected error during scraping: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-09-04 01:19:47,727 - INFO - Browser closed.
+2025-09-04 01:19:50,176 - ERROR - Unexpected error during scraping: Timeout 30000ms exceeded.
+2025-09-04 01:19:50,342 - INFO - Browser closed.
+2025-09-04 01:19:50,375 - INFO - Completed news scraping. Total sources: 2
+2025-09-04 01:19:50,377 - INFO - Total news articles scraped: 0
+2025-09-04 01:19:50,377 - DEBUG - Twitter queries for TSLA: ['$TSLA', 'Tesla stock', 'Elon Musk Tesla']
+2025-09-04 01:19:50,378 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 01:19:50,379 - DEBUG - Adding Twitter scraping task for query: Tesla stock
+2025-09-04 01:19:50,379 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 01:19:50,380 - INFO - Starting Twitter scrape for query: '$TSLA'
+2025-09-04 01:19:50,380 - INFO - Starting Twitter scrape for query: 'Tesla stock'
+2025-09-04 01:19:50,381 - INFO - Starting Twitter scrape for query: 'Elon Musk Tesla'
+2025-09-04 01:19:51,667 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=27884
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=27884
+  - [pid=27884] <gracefully close start>
+  - [pid=27884] <kill>
+  - [pid=27884] <will force kill>
+  - [pid=27884] taskkill stderr: ERROR: The process "27884" not found.
+  - [pid=27884] <process did exit: exitCode=21, signal=null>
+  - [pid=27884] starting temporary directories cleanup
+  - [pid=27884] finished temporary directories cleanup
+  - [pid=27884] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 44, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=27884
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=27884
+  - [pid=27884] <gracefully close start>
+  - [pid=27884] <kill>
+  - [pid=27884] <will force kill>
+  - [pid=27884] taskkill stderr: ERROR: The process "27884" not found.
+  - [pid=27884] <process did exit: exitCode=21, signal=null>
+  - [pid=27884] starting temporary directories cleanup
+  - [pid=27884] finished temporary directories cleanup
+  - [pid=27884] <gracefully close end>
+
+2025-09-04 01:19:51,679 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=38560
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=38560
+  - [pid=38560] <gracefully close start>
+  - [pid=38560] <kill>
+  - [pid=38560] <will force kill>
+  - [pid=38560] taskkill stderr: ERROR: The process "38560" not found.
+  - [pid=38560] <process did exit: exitCode=21, signal=null>
+  - [pid=38560] starting temporary directories cleanup
+  - [pid=38560] finished temporary directories cleanup
+  - [pid=38560] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 44, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=38560
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=38560
+  - [pid=38560] <gracefully close start>
+  - [pid=38560] <kill>
+  - [pid=38560] <will force kill>
+  - [pid=38560] taskkill stderr: ERROR: The process "38560" not found.
+  - [pid=38560] <process did exit: exitCode=21, signal=null>
+  - [pid=38560] starting temporary directories cleanup
+  - [pid=38560] finished temporary directories cleanup
+  - [pid=38560] <gracefully close end>
+
+2025-09-04 01:19:51,738 - INFO - Navigating to Twitter search URL: https://twitter.com/search?q=%24TSLA&src=typed_query&f=live
+2025-09-04 01:20:18,622 - INFO - Twitter timeline loaded.
+2025-09-04 01:20:21,480 - INFO - Collected 6/30 tweets. Scrolling to load more.
+2025-09-04 01:20:24,337 - INFO - Collected 11/30 tweets. Scrolling to load more.
+2025-09-04 01:20:27,023 - INFO - Collected 12/30 tweets. Scrolling to load more.
+2025-09-04 01:20:27,045 - WARNING - Scroll position did not change. Attempt 1/15.
+2025-09-04 01:20:29,848 - INFO - Collected 18/30 tweets. Scrolling to load more.
+2025-09-04 01:20:32,687 - INFO - Collected 22/30 tweets. Scrolling to load more.
+2025-09-04 01:20:35,427 - INFO - Collected 25/30 tweets. Scrolling to load more.
+2025-09-04 01:20:38,238 - INFO - Collected target number of tweets (30).
+2025-09-04 01:20:38,238 - INFO - Finished scraping. Found 30 unique tweets.
+2025-09-04 01:23:09,659 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 01:23:09,659 - DEBUG - Using proactor: IocpProactor
+2025-09-04 01:23:09,659 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 01:23:09,659 - DEBUG - News sources for TSLA: ['https://www.cnbc.com/quotes/TSLA', 'https://finance.yahoo.com/quote/TSLA']
+2025-09-04 01:23:09,659 - DEBUG - Adding news scraping task for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:23:09,659 - DEBUG - Adding news scraping task for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:23:09,659 - INFO - Starting news scraping for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:23:09,659 - DEBUG - Detected source type: cnbc
+2025-09-04 01:23:09,659 - INFO - Starting news scraping for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:23:09,659 - DEBUG - Detected source type: yahoo_finance
+2025-09-04 01:23:10,236 - INFO - Navigating to https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:23:10,241 - INFO - Navigating to https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:23:12,641 - INFO - Page loaded successfully. Extracting content...
+2025-09-04 01:23:12,794 - INFO - Page loaded successfully. Extracting content...
+2025-09-04 01:23:42,644 - ERROR - Unexpected error during scraping: Timeout 30000ms exceeded.
+2025-09-04 01:23:42,780 - INFO - Browser closed.
+2025-09-04 01:23:52,786 - ERROR - Error scraping CNBC articles: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(".LatestNews-list") to be visible
+    24 × locator resolved to 3 elements. Proceeding with the first one: <ul class="LatestNews-list">…</ul>
+
+2025-09-04 01:23:52,786 - INFO - Scraped 0 articles from https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:23:52,923 - INFO - Browser closed.
+2025-09-04 01:23:52,931 - INFO - Completed news scraping. Total sources: 2
+2025-09-04 01:23:52,932 - INFO - Total news articles scraped: 0
+2025-09-04 01:23:52,932 - DEBUG - Twitter queries for TSLA: ['$TSLA', 'Tesla stock', 'Elon Musk Tesla']
+2025-09-04 01:23:52,932 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 01:23:52,933 - DEBUG - Adding Twitter scraping task for query: Tesla stock
+2025-09-04 01:23:52,933 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 01:23:52,933 - INFO - Starting Twitter scrape for query: '$TSLA'
+2025-09-04 01:23:52,933 - INFO - Starting Twitter scrape for query: 'Tesla stock'
+2025-09-04 01:23:52,934 - INFO - Starting Twitter scrape for query: 'Elon Musk Tesla'
+2025-09-04 01:23:54,310 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=5528
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=5528
+  - [pid=5528] <gracefully close start>
+  - [pid=5528] <kill>
+  - [pid=5528] <will force kill>
+  - [pid=5528] taskkill stderr: ERROR: The process "5528" not found.
+  - [pid=5528] <process did exit: exitCode=21, signal=null>
+  - [pid=5528] starting temporary directories cleanup
+  - [pid=5528] finished temporary directories cleanup
+  - [pid=5528] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 44, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=5528
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=5528
+  - [pid=5528] <gracefully close start>
+  - [pid=5528] <kill>
+  - [pid=5528] <will force kill>
+  - [pid=5528] taskkill stderr: ERROR: The process "5528" not found.
+  - [pid=5528] <process did exit: exitCode=21, signal=null>
+  - [pid=5528] starting temporary directories cleanup
+  - [pid=5528] finished temporary directories cleanup
+  - [pid=5528] <gracefully close end>
+
+2025-09-04 01:23:54,351 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=7388
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=7388
+  - [pid=7388] <gracefully close start>
+  - [pid=7388] <kill>
+  - [pid=7388] <will force kill>
+  - [pid=7388] taskkill stderr: ERROR: The process "7388" not found.
+  - [pid=7388] <process did exit: exitCode=21, signal=null>
+  - [pid=7388] starting temporary directories cleanup
+  - [pid=7388] finished temporary directories cleanup
+  - [pid=7388] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 44, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=7388
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=7388
+  - [pid=7388] <gracefully close start>
+  - [pid=7388] <kill>
+  - [pid=7388] <will force kill>
+  - [pid=7388] taskkill stderr: ERROR: The process "7388" not found.
+  - [pid=7388] <process did exit: exitCode=21, signal=null>
+  - [pid=7388] starting temporary directories cleanup
+  - [pid=7388] finished temporary directories cleanup
+  - [pid=7388] <gracefully close end>
+
+2025-09-04 01:23:54,357 - INFO - Navigating to Twitter search URL: https://twitter.com/search?q=Tesla%20stock&src=typed_query&f=live
+2025-09-04 01:23:56,345 - INFO - Twitter timeline loaded.
+2025-09-04 01:23:59,451 - INFO - Collected 10/30 tweets. Scrolling to load more.
+2025-09-04 01:24:02,794 - INFO - Collected 18/30 tweets. Scrolling to load more.
+2025-09-04 01:24:05,963 - INFO - Collected 26/30 tweets. Scrolling to load more.
+2025-09-04 01:24:08,896 - INFO - Collected target number of tweets (30).
+2025-09-04 01:24:08,896 - INFO - Finished scraping. Found 30 unique tweets.
+2025-09-04 01:24:10,874 - WARNING - Error closing browser context: BrowserContext.close: Target page, context or browser has been closed
+2025-09-04 01:24:10,874 - INFO - Completed Twitter scraping. Total queries: 3
+2025-09-04 01:24:10,874 - INFO - Total tweets scraped: 30
+2025-09-04 01:24:10,874 - INFO - Saved raw tweets data to output\TSLA_tweets_raw_20250904_012309.csv
+2025-09-04 01:24:10,874 - INFO - Starting Processing Layer
+2025-09-04 01:24:10,895 - INFO - 
+--- Combined Data for Analysis (Total: 30) ---
+2025-09-04 01:29:00,594 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 01:29:00,594 - DEBUG - Using proactor: IocpProactor
+2025-09-04 01:29:00,594 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 01:29:00,594 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 01:29:00,594 - DEBUG - Adding Twitter scraping task for query: Tesla stock
+2025-09-04 01:29:00,594 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 01:29:00,594 - INFO - Starting Twitter scrape for query: '$TSLA'
+2025-09-04 01:29:00,594 - INFO - Starting Twitter scrape for query: 'Tesla stock'
+2025-09-04 01:29:00,594 - INFO - Starting Twitter scrape for query: 'Elon Musk Tesla'
+2025-09-04 01:29:01,843 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=28240
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=28240
+  - [pid=28240] <gracefully close start>
+  - [pid=28240] <kill>
+  - [pid=28240] <will force kill>
+  - [pid=28240] taskkill stderr: ERROR: The process "28240" not found.
+  - [pid=28240] <process did exit: exitCode=21, signal=null>
+  - [pid=28240] starting temporary directories cleanup
+  - [pid=28240] finished temporary directories cleanup
+  - [pid=28240] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=28240
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=28240
+  - [pid=28240] <gracefully close start>
+  - [pid=28240] <kill>
+  - [pid=28240] <will force kill>
+  - [pid=28240] taskkill stderr: ERROR: The process "28240" not found.
+  - [pid=28240] <process did exit: exitCode=21, signal=null>
+  - [pid=28240] starting temporary directories cleanup
+  - [pid=28240] finished temporary directories cleanup
+  - [pid=28240] <gracefully close end>
+
+2025-09-04 01:29:01,889 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=13336
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=13336
+  - [pid=13336] <gracefully close start>
+  - [pid=13336] <kill>
+  - [pid=13336] <will force kill>
+  - [pid=13336] taskkill stderr: ERROR: The process "13336" not found.
+  - [pid=13336] <process did exit: exitCode=21, signal=null>
+  - [pid=13336] starting temporary directories cleanup
+  - [pid=13336] finished temporary directories cleanup
+  - [pid=13336] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=13336
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=13336
+  - [pid=13336] <gracefully close start>
+  - [pid=13336] <kill>
+  - [pid=13336] <will force kill>
+  - [pid=13336] taskkill stderr: ERROR: The process "13336" not found.
+  - [pid=13336] <process did exit: exitCode=21, signal=null>
+  - [pid=13336] starting temporary directories cleanup
+  - [pid=13336] finished temporary directories cleanup
+  - [pid=13336] <gracefully close end>
+
+2025-09-04 01:29:01,994 - INFO - Navigating to Twitter search URL: https://twitter.com/search?q=Tesla%20stock&src=typed_query&f=live
+2025-09-04 01:29:03,984 - INFO - Twitter timeline loaded.
+2025-09-04 01:29:06,955 - INFO - Collected 10/30 tweets. Scrolling to load more.
+2025-09-04 01:29:09,815 - INFO - Collected 14/30 tweets. Scrolling to load more.
+2025-09-04 01:29:13,003 - INFO - Collected 25/30 tweets. Scrolling to load more.
+2025-09-04 01:29:15,946 - INFO - Collected target number of tweets (30).
+2025-09-04 01:29:15,946 - INFO - Finished scraping. Found 30 unique tweets.
+2025-09-04 01:29:16,751 - WARNING - Error closing browser context: BrowserContext.close: Target page, context or browser has been closed
+2025-09-04 01:29:16,751 - INFO - Completed Twitter scraping. Total queries: 3
+2025-09-04 01:29:16,751 - INFO - Total tweets scraped: 30
+2025-09-04 01:29:16,769 - INFO - Saved raw tweets data to output\TSLA_tweets_raw_20250904_012900.csv
+2025-09-04 01:29:16,776 - INFO - Filtered tweets: 22
+2025-09-04 01:29:16,780 - INFO - 
+--- Combined Data for Analysis (Total: 22) ---
+2025-09-04 01:29:16,873 - DEBUG - Initializing SentimentAnalyzer with models: transformer, vader, flair
+2025-09-04 01:29:16,877 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 01:29:17,543 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-finetuned-sst-2-english/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-04 01:29:17,964 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 170
+2025-09-04 01:29:18,192 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-04 01:29:19,303 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-04 01:29:19,550 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 146
+2025-09-04 01:29:19,774 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-04 01:29:20,080 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased/revision/main HTTP/1.1" 307 95
+2025-09-04 01:29:20,321 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased/revision/main HTTP/1.1" 200 4623
+2025-09-04 01:29:21,131 - INFO - Analyzing sentiment on combined data.
+2025-09-04 01:29:22,736 - INFO - Sentiment analysis completed.
+2025-09-04 01:29:22,736 - INFO - Saved sentiment analysis results to output\TSLA_sentiment_analysis_20250904_012900.csv
+2025-09-04 01:29:22,736 - INFO - Generating summary statistics.
+2025-09-04 01:29:22,745 - DEBUG - Summary statistics: {'stock_symbol': 'TSLA', 'date': '2025-09-04', 'total_items': 22, 'news_count': 0, 'tweet_count': 22, 'positive_count': 6, 'neutral_count': 2, 'negative_count': 14, 'avg_sentiment': np.float64(-0.22473986066428095), 'news_avg_sentiment': nan, 'tweet_avg_sentiment': np.float64(-0.22473986066428095)}
+2025-09-04 01:29:22,746 - INFO - Saved summary statistics to output\TSLA_sentiment_summary_20250904_012900.csv
+2025-09-04 01:29:22,746 - INFO - Process completed successfully!
+2025-09-04 10:22:30,970 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 10:22:30,970 - DEBUG - Using proactor: IocpProactor
+2025-09-04 10:22:30,970 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 10:22:30,970 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 10:22:30,970 - DEBUG - Adding Twitter scraping task for query: Tesla stock
+2025-09-04 10:22:30,970 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 10:22:30,970 - INFO - Starting Twitter scrape for query: '$TSLA'
+2025-09-04 10:22:30,970 - INFO - Starting Twitter scrape for query: 'Tesla stock'
+2025-09-04 10:22:30,970 - INFO - Starting Twitter scrape for query: 'Elon Musk Tesla'
+2025-09-04 10:22:35,409 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=23012
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=23012
+  - [pid=23012] <gracefully close start>
+  - [pid=23012] <kill>
+  - [pid=23012] <will force kill>
+  - [pid=23012] taskkill stderr: ERROR: The process "23012" not found.
+  - [pid=23012] <process did exit: exitCode=21, signal=null>
+  - [pid=23012] starting temporary directories cleanup
+  - [pid=23012] finished temporary directories cleanup
+  - [pid=23012] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=23012
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=23012
+  - [pid=23012] <gracefully close start>
+  - [pid=23012] <kill>
+  - [pid=23012] <will force kill>
+  - [pid=23012] taskkill stderr: ERROR: The process "23012" not found.
+  - [pid=23012] <process did exit: exitCode=21, signal=null>
+  - [pid=23012] starting temporary directories cleanup
+  - [pid=23012] finished temporary directories cleanup
+  - [pid=23012] <gracefully close end>
+
+2025-09-04 10:22:35,411 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=4864
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=4864
+  - [pid=4864] <gracefully close start>
+  - [pid=4864] <kill>
+  - [pid=4864] <will force kill>
+  - [pid=4864] taskkill stderr: ERROR: The process "4864" not found.
+  - [pid=4864] <process did exit: exitCode=21, signal=null>
+  - [pid=4864] starting temporary directories cleanup
+  - [pid=4864] finished temporary directories cleanup
+  - [pid=4864] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=4864
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=4864
+  - [pid=4864] <gracefully close start>
+  - [pid=4864] <kill>
+  - [pid=4864] <will force kill>
+  - [pid=4864] taskkill stderr: ERROR: The process "4864" not found.
+  - [pid=4864] <process did exit: exitCode=21, signal=null>
+  - [pid=4864] starting temporary directories cleanup
+  - [pid=4864] finished temporary directories cleanup
+  - [pid=4864] <gracefully close end>
+
+2025-09-04 10:22:35,428 - INFO - Navigating to Twitter search URL: https://twitter.com/search?q=Tesla%20stock&src=typed_query&f=live
+2025-09-04 10:22:38,509 - INFO - Twitter timeline loaded.
+2025-09-04 10:22:41,206 - INFO - Collected 10/30 tweets. Scrolling to load more.
+2025-09-04 10:22:43,901 - INFO - Collected 16/30 tweets. Scrolling to load more.
+2025-09-04 10:22:46,651 - INFO - Collected 24/30 tweets. Scrolling to load more.
+2025-09-04 10:22:49,308 - INFO - Collected 29/30 tweets. Scrolling to load more.
+2025-09-04 10:22:51,936 - INFO - Collected target number of tweets (30).
+2025-09-04 10:22:51,936 - INFO - Finished scraping. Found 30 unique tweets.
+2025-09-04 10:22:52,251 - WARNING - Error closing browser context: BrowserContext.close: Target page, context or browser has been closed
+2025-09-04 10:22:52,252 - INFO - Completed Twitter scraping. Total queries: 3
+2025-09-04 10:22:52,255 - INFO - Total tweets scraped: 30
+2025-09-04 10:22:52,262 - INFO - Saved raw tweets data to output\TSLA_tweets_raw_20250904_102230.csv
+2025-09-04 10:22:52,270 - INFO - Filtered tweets: 30
+2025-09-04 10:22:52,277 - INFO - 
+--- Combined Data for Analysis (Total: 30) ---
+2025-09-04 10:22:52,279 - DEBUG -   data_type                                               text
+0     tweet  And we’ll ignore the irony of a Tesla guy talk...
+1     tweet       Tesla says Robotaxi app open to public users
+2     tweet  Uh... Is this right?  All of the people who ga...
+3     tweet  Dow Jones Futures: Google, Apple, Tesla Lead M...
+4     tweet  Lucid Group has dramatically underperformed in...
+2025-09-04 10:22:52,286 - DEBUG - Initializing SentimentAnalyzer with models: transformer, vader, flair
+2025-09-04 10:22:52,289 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 10:22:53,536 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased-finetuned-sst-2-english/resolve/main/config.json HTTP/1.1" 200 0
+2025-09-04 10:22:53,898 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 170
+2025-09-04 10:22:54,159 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-04 10:22:54,989 - DEBUG - https://huggingface.co:443 "HEAD /distilbert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-04 10:22:55,273 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 146
+2025-09-04 10:22:55,550 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-04 10:22:55,845 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert-base-uncased/revision/main HTTP/1.1" 307 95
+2025-09-04 10:22:56,115 - DEBUG - https://huggingface.co:443 "GET /api/models/distilbert/distilbert-base-uncased/revision/main HTTP/1.1" 200 4621
+2025-09-04 10:22:56,650 - INFO - Analyzing sentiment on combined data.
+2025-09-04 10:22:58,041 - INFO - Sentiment analysis completed.
+2025-09-04 10:22:58,044 - INFO - Saved sentiment analysis results to output\TSLA_sentiment_analysis_20250904_102230.csv
+2025-09-04 10:22:58,044 - INFO - Generating summary statistics.
+2025-09-04 10:22:58,047 - DEBUG - Summary statistics: {'stock_symbol': 'TSLA', 'date': '2025-09-04', 'total_items': 30, 'news_count': 0, 'tweet_count': 30, 'positive_count': 9, 'neutral_count': 7, 'negative_count': 14, 'avg_sentiment': np.float64(-0.07210478981749216), 'news_avg_sentiment': nan, 'tweet_avg_sentiment': np.float64(-0.07210478981749216)}
+2025-09-04 10:22:58,048 - INFO - Saved summary statistics to output\TSLA_sentiment_summary_20250904_102230.csv
+2025-09-04 10:22:58,048 - INFO - Process completed successfully!
+2025-09-04 10:24:09,674 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 10:24:09,674 - DEBUG - Using proactor: IocpProactor
+2025-09-04 10:24:09,674 - INFO - Starting Scraping Layer for GOOGL
+2025-09-04 10:24:09,674 - INFO - Completed Twitter scraping. Total queries: 0
+2025-09-04 10:24:09,674 - INFO - Total tweets scraped: 0
+2025-09-04 10:24:09,674 - INFO - Filtered tweets: 0
+2025-09-04 10:24:09,674 - WARNING - No data to analyze. Exiting.
+2025-09-04 10:25:03,360 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 10:25:03,364 - DEBUG - Using proactor: IocpProactor
+2025-09-04 10:25:03,364 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 10:25:03,364 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 10:25:03,364 - DEBUG - Adding Twitter scraping task for query: Tesla
+2025-09-04 10:25:03,364 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 10:25:03,364 - INFO - Starting Twitter scrape for query: '$TSLA'
+2025-09-04 10:25:03,364 - INFO - Starting Twitter scrape for query: 'Tesla'
+2025-09-04 10:25:03,364 - INFO - Starting Twitter scrape for query: 'Elon Musk Tesla'
+2025-09-04 10:25:04,145 - INFO - Navigating to Twitter search URL: https://twitter.com/search?q=Tesla&src=typed_query&f=live
+2025-09-04 10:25:04,310 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=25676
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=25676
+  - [pid=25676] <gracefully close start>
+  - [pid=25676] <kill>
+  - [pid=25676] <will force kill>
+  - [pid=25676] taskkill stderr: ERROR: The process "25676" not found.
+  - [pid=25676] <process did exit: exitCode=21, signal=null>
+  - [pid=25676] starting temporary directories cleanup
+  - [pid=25676] finished temporary directories cleanup
+  - [pid=25676] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=25676
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=25676
+  - [pid=25676] <gracefully close start>
+  - [pid=25676] <kill>
+  - [pid=25676] <will force kill>
+  - [pid=25676] taskkill stderr: ERROR: The process "25676" not found.
+  - [pid=25676] <process did exit: exitCode=21, signal=null>
+  - [pid=25676] starting temporary directories cleanup
+  - [pid=25676] finished temporary directories cleanup
+  - [pid=25676] <gracefully close end>
+
+2025-09-04 10:25:04,313 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=12636
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=12636
+  - [pid=12636] <gracefully close start>
+  - [pid=12636] <kill>
+  - [pid=12636] <will force kill>
+  - [pid=12636] taskkill stderr: ERROR: The process "12636" not found.
+  - [pid=12636] <process did exit: exitCode=21, signal=null>
+  - [pid=12636] starting temporary directories cleanup
+  - [pid=12636] finished temporary directories cleanup
+  - [pid=12636] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=12636
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=12636
+  - [pid=12636] <gracefully close start>
+  - [pid=12636] <kill>
+  - [pid=12636] <will force kill>
+  - [pid=12636] taskkill stderr: ERROR: The process "12636" not found.
+  - [pid=12636] <process did exit: exitCode=21, signal=null>
+  - [pid=12636] starting temporary directories cleanup
+  - [pid=12636] finished temporary directories cleanup
+  - [pid=12636] <gracefully close end>
+
+2025-09-04 10:25:07,017 - INFO - Twitter timeline loaded.
+2025-09-04 10:25:09,522 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:12,033 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:14,544 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:17,065 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:19,570 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:22,080 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:24,587 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:27,100 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:29,607 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:32,118 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:34,624 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:37,124 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:39,637 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:42,147 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:44,665 - WARNING - No tweet elements found on the page.
+2025-09-04 10:25:44,665 - INFO - Finished scraping. Found 0 unique tweets.
+2025-09-04 10:25:45,053 - WARNING - Error closing browser context: BrowserContext.close: Target page, context or browser has been closed
+2025-09-04 10:25:45,053 - INFO - Completed Twitter scraping. Total queries: 3
+2025-09-04 10:25:45,053 - INFO - Total tweets scraped: 0
+2025-09-04 10:25:45,069 - INFO - Filtered tweets: 0
+2025-09-04 10:25:45,069 - WARNING - No data to analyze. Exiting.
+2025-09-04 10:26:04,585 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 10:26:04,586 - DEBUG - Using proactor: IocpProactor
+2025-09-04 10:26:04,587 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 10:26:04,587 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 10:26:04,587 - DEBUG - Adding Twitter scraping task for query: Tesla
+2025-09-04 10:26:04,587 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
+2025-09-04 10:26:04,587 - INFO - Starting Twitter scrape for query: '$TSLA'
+2025-09-04 10:26:04,588 - INFO - Starting Twitter scrape for query: 'Tesla'
+2025-09-04 10:26:04,588 - INFO - Starting Twitter scrape for query: 'Elon Musk Tesla'
+2025-09-04 10:26:05,322 - INFO - Navigating to Twitter search URL: https://twitter.com/search?q=Tesla&src=typed_query&f=live
+2025-09-04 10:26:05,476 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=21588
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=21588
+  - [pid=21588] <gracefully close start>
+  - [pid=21588] <kill>
+  - [pid=21588] <will force kill>
+  - [pid=21588] taskkill stderr: ERROR: The process "21588" not found.
+  - [pid=21588] <process did exit: exitCode=21, signal=null>
+  - [pid=21588] starting temporary directories cleanup
+  - [pid=21588] finished temporary directories cleanup
+  - [pid=21588] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=21588
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=21588
+  - [pid=21588] <gracefully close start>
+  - [pid=21588] <kill>
+  - [pid=21588] <will force kill>
+  - [pid=21588] taskkill stderr: ERROR: The process "21588" not found.
+  - [pid=21588] <process did exit: exitCode=21, signal=null>
+  - [pid=21588] starting temporary directories cleanup
+  - [pid=21588] finished temporary directories cleanup
+  - [pid=21588] <gracefully close end>
+
+2025-09-04 10:26:05,481 - ERROR - An unexpected error occurred in scrape_twitter: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=11076
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=11076
+  - [pid=11076] <gracefully close start>
+  - [pid=11076] <kill>
+  - [pid=11076] <will force kill>
+  - [pid=11076] taskkill stderr: ERROR: The process "11076" not found.
+  - [pid=11076] <process did exit: exitCode=21, signal=null>
+  - [pid=11076] starting temporary directories cleanup
+  - [pid=11076] finished temporary directories cleanup
+  - [pid=11076] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 46, in scrape_twitter
+    context = await p.chromium.launch_persistent_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14765, in launch_persistent_context
+    await self._impl_obj.launch_persistent_context(
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+<launched> pid=11076
+Call log:
+  - <launching> C:\Users\Fiona\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --start-maximized --user-data-dir=C:\Users\Fiona\chrome-data\twitter-profile --remote-debugging-pipe about:blank
+  - <launched> pid=11076
+  - [pid=11076] <gracefully close start>
+  - [pid=11076] <kill>
+  - [pid=11076] <will force kill>
+  - [pid=11076] taskkill stderr: ERROR: The process "11076" not found.
+  - [pid=11076] <process did exit: exitCode=21, signal=null>
+  - [pid=11076] starting temporary directories cleanup
+  - [pid=11076] finished temporary directories cleanup
+  - [pid=11076] <gracefully close end>
+
+2025-09-04 10:26:08,093 - INFO - Twitter timeline loaded.
+2025-09-04 10:26:10,608 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:13,115 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:15,642 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:18,160 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:20,669 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:23,192 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:25,710 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:28,225 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:30,737 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:33,256 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:35,767 - WARNING - No tweet elements found on the page.
+2025-09-04 10:26:36,202 - ERROR - An unexpected error occurred in scrape_twitter: Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Users\Fiona\Desktop\projects\DLProject\src\scraping\twitter_scraper.py", line 84, in scrape_twitter
+    await page.wait_for_timeout(2500) # Wait for content to load after scroll
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\async_api\_generated.py", line 11413, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_page.py", line 1104, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_frame.py", line 844, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Fiona\Desktop\projects\DLProject\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-09-04 10:26:36,212 - WARNING - Error closing browser context: BrowserContext.close: Target page, context or browser has been closed
+2025-09-04 10:26:36,212 - INFO - Completed Twitter scraping. Total queries: 3
+2025-09-04 10:26:36,212 - INFO - Total tweets scraped: 0
+2025-09-04 10:26:36,217 - INFO - Filtered tweets: 0
+2025-09-04 10:26:36,217 - WARNING - No data to analyze. Exiting.

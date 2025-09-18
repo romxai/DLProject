@@ -29,18 +29,17 @@ ENV/
 playwright-report/
 
 # Logs
-*.log
-news_scraper_debug.log
-twitter_scraper_debug.log
-debug.log
+# *.log
+# news_scraper_debug.log
+# twitter_scraper_debug.log
+# debug.log
 
 # Output and data
-output/
-*.csv
-*.tsv
-*.xlsx
-*.db
-*.sqlite
+# output/
+# *.tsv
+# *.xlsx
+# *.db
+# *.sqlite
 
 # OS files
 .DS_Store

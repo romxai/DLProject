@@ -1,0 +1,7 @@
+text,source,transformer_sentiment,transformer_score,vader_sentiment,flair_sentiment,flair_score
+Pro News,https://www.cnbc.com/quotes/AAPL,POSITIVE,0.9976068735122681,0.0,POSITIVE,0.9317745566368103
+Mixed options sentiment in Apple with shares up 3.17%,https://www.cnbc.com/quotes/AAPL,NEGATIVE,0.988009512424469,0.296,NEGATIVE,0.9607269167900085
+AI Daily: Apple AI researcher for robotics departs for Meta,https://www.cnbc.com/quotes/AAPL,NEGATIVE,0.9977739453315735,0.0,NEGATIVE,0.9952713847160339
+"Apple AI researcher for robotics departs for Meta, Bloomberg reports",https://www.cnbc.com/quotes/AAPL,NEGATIVE,0.9976740479469299,0.0,NEGATIVE,0.9968540072441101
+Alphabet jumps after avoiding worst case in antitrust ruling: Morning Buzz,https://www.cnbc.com/quotes/AAPL,NEGATIVE,0.9773240685462952,-0.7579,NEGATIVE,0.9847608804702759
+Crypto Currents: U.S. clarifies spot trading rules as Figure files IPO,https://www.cnbc.com/quotes/AAPL,NEGATIVE,0.9796094298362732,0.2263,POSITIVE,0.8698793649673462

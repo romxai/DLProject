@@ -1,0 +1,7 @@
+text,source,transformer_sentiment,transformer_score,vader_sentiment,flair_sentiment,flair_score
+Pro News,https://www.cnbc.com/quotes/TSLA,POSITIVE,0.9976068735122681,0.0,POSITIVE,0.9317745566368103
+Notable open interest changes for September 3rd,https://www.cnbc.com/quotes/TSLA,POSITIVE,0.9987305998802185,0.4588,POSITIVE,0.8853207230567932
+Tesla Bets on Optimus Robots Over EV Growth,https://www.cnbc.com/quotes/TSLA,NEGATIVE,0.988933801651001,0.3818,NEGATIVE,0.9966633915901184
+"QQQ ETF News, 9/3/2025",https://www.cnbc.com/quotes/TSLA,NEGATIVE,0.8172824382781982,0.0,POSITIVE,0.8555251359939575
+BMW Flexes Its ‘Superbrain’ EVs to Take on Tesla and Chinese Rivals,https://www.cnbc.com/quotes/TSLA,POSITIVE,0.9932655096054077,0.0,POSITIVE,0.9966603517532349
+Morning News Wrap-Up: Tuesday’s Biggest Stock Market Stories!,https://www.cnbc.com/quotes/TSLA,POSITIVE,0.9977385997772217,0.0,POSITIVE,0.8788760900497437

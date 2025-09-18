@@ -1,0 +1,2 @@
+stock_symbol,date,total_items,news_count,tweet_count,positive_count,neutral_count,negative_count,avg_sentiment,news_avg_sentiment,tweet_avg_sentiment
+TSLA,2025-09-04,22,0,22,6,2,14,-0.22473986066428095,,-0.22473986066428095

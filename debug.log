@@ -1,0 +1,12 @@
+2025-09-04 01:11:05,617 - INFO - Starting the sentiment-driven stock prediction pipeline.
+2025-09-04 01:11:05,617 - DEBUG - Using proactor: IocpProactor
+2025-09-04 01:11:05,617 - INFO - Starting Scraping Layer for TSLA
+2025-09-04 01:11:05,617 - DEBUG - News sources for TSLA: ['https://www.cnbc.com/quotes/TSLA', 'https://finance.yahoo.com/quote/TSLA']
+2025-09-04 01:11:05,617 - DEBUG - Adding news scraping task for URL: https://www.cnbc.com/quotes/TSLA
+2025-09-04 01:11:05,617 - DEBUG - Adding news scraping task for URL: https://finance.yahoo.com/quote/TSLA
+2025-09-04 01:12:11,003 - INFO - Completed news scraping. Total sources: 2
+2025-09-04 01:12:11,003 - INFO - Total news articles scraped: 0
+2025-09-04 01:12:11,003 - DEBUG - Twitter queries for TSLA: ['$TSLA', 'Tesla stock', 'Elon Musk Tesla']
+2025-09-04 01:12:11,003 - DEBUG - Adding Twitter scraping task for query: $TSLA
+2025-09-04 01:12:11,003 - DEBUG - Adding Twitter scraping task for query: Tesla stock
+2025-09-04 01:12:11,003 - DEBUG - Adding Twitter scraping task for query: Elon Musk Tesla
